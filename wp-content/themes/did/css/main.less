@@ -1,4 +1,6 @@
 @import "normalize.less";
+@import "lesshat.less";
+@import "looper.less";
 @import "font-awesome.less";
 
 // Variables & Mixins
@@ -89,6 +91,7 @@ menu {
         float:right;
     }
     &#main {
+        z-index:2;
         top:20px;
         .left {
             width:290px;
@@ -154,6 +157,7 @@ menu {
                 }
             }
             .proyect-desc {
+                height: 300px;
                 padding:20px 20px 25px;
                 background:rgba(0, 0, 0, 0.6);
                 color:#fff;
@@ -220,6 +224,7 @@ menu {
         }
     }
     &#proyect-navi {
+        z-index: 2;
         bottom:40px;
         a {
             display:block;
