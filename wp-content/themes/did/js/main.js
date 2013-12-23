@@ -7,13 +7,14 @@
   var introautosize = function () {
 
   //Auto width & height #intro divs
+    $('#intro').height($(window).height());
     $('#intro .back').height($(window).height());
     $('#intro .front').height($(window).height());
     $('#proyectos').height($(window).height());
     $('#proyectos .slides').height($(window).height());
 
     // Auto margin-top #intro .content
-    var mtopcontent = ($(document).height() / 2) - ($('#intro .front .content').outerHeight() / 2);
+    var mtopcontent = ($('#intro').height() / 2) - ($('#intro .front .content').outerHeight() / 2);
     $('#intro .front .content').css('margin-top', mtopcontent);
 
   }, stickymenu = function () {
