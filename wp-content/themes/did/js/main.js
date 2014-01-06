@@ -31,14 +31,40 @@
   $(window).resize(introautosize);
   $(window).scroll(stickymenu);
 
+  // scrollto
+  $('.scroll-to').click(function () {
+    if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') || location.hostname === this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 500);
+        return false;
+      }
+    }
+  });
+
   $('.proyect-desc').looper({
     interval: false
   });
 
   $('#proyectos').on('show', function (e) {
+
+    var prevIndex = e.relatedIndex - 1, nextIndex = e.relatedIndex + 1;
+
+    if (nextIndex === 9) {
+      nextIndex = 0;
+    }
+
+    var titPrev = $('.proyects > li').eq(prevIndex).text(), titNext = $('.proyects > li').eq(nextIndex).text();
+
     $('.proyects > li').removeClass('active');
+
     $('.proyects > li').eq(e.relatedIndex).addClass('active');
     $('.proyect-desc').looper('to', e.relatedIndex + 1);
+    $('.navi-prev span').html(titPrev);
+    $('.navi-next span').html(titNext);
   });
 
 }(jQuery));

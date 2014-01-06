@@ -2,13 +2,14 @@
         <div id="intro">
             
             <div class="back">
-                <img src="<?php bloginfo('template_url'); ?>/img/intro-bg.jpg">
+                <video src="<?php bloginfo('template_url'); ?>/video/HardDriveH264.mp4" autoplay loop></video>
+                <!-- <img src="<?php bloginfo('template_url'); ?>/img/intro-bg.jpg"> -->
             </div>
 
             <div class="front">
                 <div class="content">
                     <h1 class="desc">DID es una oficina de diseño de servicios, comunicación y medios digitales especializada en política y problemas públicos.</h1>
-                    <a href="#" class="down"></a>
+                    <a href="#proyectos-cont" class="down scroll-to"></a>
                 </div>
             </div>
 
@@ -20,10 +21,34 @@
 
                 <div class="slides looper-inner">
                     <ul class="item">
-                        <li><img src="<?php bloginfo('template_url'); ?>/img/slides-mafi.jpg"></li>
+                        <li><img src="<?php bloginfo('template_url'); ?>/img/slides-mb.jpg"></li>
+                    </ul>
+                    <ul class="item">
+                        <li><img src="<?php bloginfo('template_url'); ?>/img/slides-sc.jpg"></li>
                     </ul>
                     <ul class="item">
                         <li><img src="<?php bloginfo('template_url'); ?>/img/slides-mafi.jpg"></li>
+                    </ul>
+                    <ul class="item">
+                        <li><img src="<?php bloginfo('template_url'); ?>/img/slides-reforma.jpg"></li>
+                    </ul>
+                    <ul class="item">
+                        <li>
+                            <img src="<?php bloginfo('template_url'); ?>/img/intro-bg.jpg">
+                            <!-- <img src="<?php bloginfo('template_url'); ?>/img/slides-mafi.jpg"> -->
+                        </li>
+                    </ul>
+                    <ul class="item">
+                        <li><img src="<?php bloginfo('template_url'); ?>/img/slides-populus.jpg"></li>
+                    </ul>
+                    <ul class="item">
+                        <li><img src="<?php bloginfo('template_url'); ?>/img/slides-cancha.jpg"></li>
+                    </ul>
+                    <ul class="item">
+                        <li><img src="<?php bloginfo('template_url'); ?>/img/slides-reconstruye.jpg"></li>
+                    </ul>
+                    <ul class="item">
+                        <li><img src="<?php bloginfo('template_url'); ?>/img/slides-eure.jpg"></li>
                     </ul>
                 </div>
 
@@ -113,12 +138,12 @@
                            
                             
                         </div>
-                        <div class="share">
+                        <!-- <div class="share">
                             <ul>
                                 <li class="facebook"><div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div></li>
                                 <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-lang="es">Twittear</a></li>
                             </ul>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="right">
