@@ -8,7 +8,7 @@
 
             <div class="front">
                 <div class="content">
-                    <h1 class="desc">DID es una oficina de diseño de servicios, comunicación y medios digitales especializada en política y problemas públicos.</h1>
+                    <h1 class="desc">DIDs es una oficina de diseño de servicios, comunicación y medios digitales especializada en política y problemas públicos.</h1>
                     <a href="#proyectos-cont" class="down scroll-to"></a>
                 </div>
             </div>
@@ -21,7 +21,20 @@
 
                 <div class="slides looper-inner">
                     <ul class="item">
-                        <li><img src="<?php bloginfo('template_url'); ?>/img/slides-mb.jpg"></li>
+                        <li>
+                            <!-- <img src="<?php bloginfo('template_url'); ?>/img/slides-mb.jpg"> -->
+                             <span data-picture data-alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
+                                <span data-src="<?php bloginfo('template_url'); ?>/imgs/small.jpg"></span>
+                                <span data-src="<?php bloginfo('template_url'); ?>/imgs/medium.jpg"     data-media="(min-width: 400px)"></span>
+                                <span data-src="<?php bloginfo('template_url'); ?>/imgs/large.jpg"      data-media="(min-width: 800px)"></span>
+                                <span data-src="<?php bloginfo('template_url'); ?>/img/slides-mb.jpg" data-media="(min-width: 1000px)"></span>
+
+                                <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+                                <noscript>
+                                    <img src="small.jpg" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
+                                </noscript>
+                            </span>
+                        </li>
                     </ul>
                     <ul class="item">
                         <li><img src="<?php bloginfo('template_url'); ?>/img/slides-sc.jpg"></li>

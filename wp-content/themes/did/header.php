@@ -10,6 +10,9 @@
         <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/main.css">
 
         <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        
+        <script src="<?php bloginfo('template_url'); ?>/js/vendor/matchmedia.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/js/vendor/picturefill.js"></script>
 
         <script src="<?php bloginfo('template_url'); ?>/js/vendor/modernizr-2.6.2.min.js"></script>
         <?php wp_head(); ?>

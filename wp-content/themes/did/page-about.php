@@ -2,7 +2,7 @@
 
 
         <div id="about">
-            
+
             <div class="imagen about">
                 <div class="texto">
                     <div class="container">
@@ -17,7 +17,7 @@
                     <p>En DID creamos estrategias, investigación, productos y servicios basados en un proceso de diseño abierto. Utilizamos el diseño y la comunicación como herramientas multidimensionales de creación de valor para empresas, instituciones, organizaciones sociales e individuos.</p>
 
                     <p>Nuestras iniciativas y emprendimientos independientes nos permiten identificar oportunidades de desarrollo e innovación mediante la exploración de nuevos medios, mercados y servicios. DID apoya su acción en la experiencia de una red de profesionales que en los últimos 10 años, ha jugado un papel clave en la integración del diseño y la comunicación en actividades sociales, económicas y políticas en Chile.</p>
-                    
+
                     <a href="mailto:info@did.is" class="contact" target="_blank">Contáctanos en info@did.is</a>
                 </div>
             </div>
@@ -26,7 +26,7 @@
                 <div class="texto">
                     <div class="container">
                         <span class="type">Equipo</span>
-                        <h1 class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fermentum convallis risus porttitor tempus. Nullam pretium urna quamtriscoac.</h1>
+                        <h1 class="desc">Contamos con un equipo de colaboradores de diversas disciplinas que nos permite abordar proyectos de diversa escala y alcance. Este equipo está liderado por 4 socios fundadores.</h1>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
                             'no_found_rows' => true
                         );
                         $equipo = new WP_Query($args);
-                    
+
                         if($equipo->have_posts()) : while($equipo->have_posts()): $equipo->the_post(); ?>
 
                             <li class="cf">
@@ -63,12 +63,12 @@
                                     </div>
                                 </div>
                             </li>
-                    
+
                         <?php endwhile;
                         wp_reset_postdata();
                         endif; ?>
 
-                        
+
 
                     </ul>
                 </div>
