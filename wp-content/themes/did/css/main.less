@@ -44,6 +44,12 @@ a {.transition(0.2s); text-decoration:none; color:inherit;}
             min-height:100%;
             float:left;
         }
+        video {
+            width:auto;
+            height:auto;
+            min-width:100%;
+            min-height:100%;
+        }
     }
     .front {
         width:100%;
@@ -95,7 +101,7 @@ menu {
         z-index:2;
         top:20px;
         .left {
-            width:290px;
+            width:288px;
         }
         .main-nav {
             ul {
@@ -112,11 +118,15 @@ menu {
                         display:block;
                         height:40px;
                         background:rgba(255, 255, 255, 0.8);
-                        padding:14px 21px;
+                        padding:14px 18px;
                         font-weight:700;
                         font-size:10px;
                         text-transform:uppercase;
                         color:#000;
+                        i {
+                            margin:0 0 0 6px;
+                            font-size:12px;
+                        }
                         &:hover {
                             background:@yellow;
                         }
@@ -142,6 +152,9 @@ menu {
             ul.proyects {
                 padding:10px 0;
                 background:#333;
+                overflow:hidden;
+                .transition (0.3s);
+                height:auto;
                 li {
                     a {
                         color:#fff;
@@ -158,10 +171,11 @@ menu {
                 }
             }
             .proyect-desc {
-                height: 300px;
-                padding:20px 20px 25px;
+                height:0;
+                padding:0 20px;
                 background:rgba(0, 0, 0, 0.6);
                 color:#fff;
+                .transition (0.3s);
                 h2.title {
                     font-size:17px;
                     font-weight:700;
@@ -199,6 +213,16 @@ menu {
                             margin:0 10px 0 0;
                         }
                     }
+                }
+            }
+            &.collapsed {
+                ul.proyects {
+                    height:0;
+                    padding:0;
+                }
+                .proyect-desc {
+                    height: 300px;
+                    padding:20px 20px 25px;
                 }
             }
         }
@@ -428,3 +452,5 @@ menu {
         }
     }
 }
+
+@import "media.less";

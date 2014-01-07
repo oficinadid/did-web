@@ -1,0 +1,188 @@
+@media all and (max-width: 1280px) {
+	
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* - iPad Portrait - *////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	
+	#intro {
+		display:none;
+		visibility:hidden;
+	}
+	menu#main {
+		position:fixed;
+		top:0 !important;
+		.left {
+			width:287px;
+		}
+		.main-nav {
+			ul {
+				li {
+					a {
+						padding:14px 15px;
+					}
+				}
+			}
+		}
+	}
+	#proyectos {
+		height:927px !important;
+		.slides {
+			height:927px !important;
+			ul {
+				li {
+					img {
+						width:768px;
+						height:927px;
+					}
+				}
+			}
+		}
+	}
+	#about {
+		.container {
+			width:768px;
+		}
+		.imagen {
+			.texto {
+				padding:120px 20px 0;
+				.container {
+					width:728px;
+				}
+			}
+			h1.desc {
+				padding:0 80px;
+			}
+			&.equipo {
+				background:url(../img/about-equipo-bg.jpg) no-repeat top center;
+				.texto {
+					padding:80px 20px 0;
+				}
+			}
+		}
+		.content.equipo {
+			ul.miembros {
+				>li {
+					.left {
+						width:150px;
+						margin:0 20px 0 40px;
+						img {
+							width:150px;
+							height:150px;
+							margin:20px 0 0;
+						}
+					}
+					.right {
+						width:550px;
+						h2 {
+							margin:0 0 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* - iPad Landscape - *///////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+	
+	* {overflow:hidden !important;}
+	#intro {
+		display:none;
+		visibility:hidden;
+	}
+	menu#main {
+		position:fixed;
+		top:0 !important;
+		.left {
+			width:287px;
+		}
+		.main-nav {
+			ul {
+				li {
+					a {
+						padding:14px 15px;
+					}
+				}
+			}
+		}
+	}
+	/*#proyectos {
+		height:671px !important;
+		.slides {
+			height:671px !important;
+			ul {
+				li {
+					img {
+						width:1024px;
+						height:671px;
+					}
+				}
+			}
+		}
+	}*/
+	#about {
+		.imagen {
+			&.equipo {
+				background:url(../img/about-equipo-bg.jpg) no-repeat top center;
+			}
+		}
+	}
+
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* - iPhone Portrait - *//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) 
+and (orientation : portrait) {
+	
+	#intro {
+		display:none;
+		visibility:hidden;
+	}
+
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* - iPhone Landscape - */////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) 
+and (orientation : landscape) {
+
+	#intro {
+		display:none;
+		visibility:hidden;
+	}
+
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* - iPhone 5 Landscape - */////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media only screen and (device-aspect-ratio: 40/71) and (orientation : landscape) {
+	
+	
+
+}
