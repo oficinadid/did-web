@@ -1,5 +1,5 @@
 /*jslint browser: true*/
-/*global $, jQuery*/
+
 
 (function ($) {
   "use strict";
@@ -44,6 +44,22 @@
       }
     }
   });
+
+  // quitamos contenedor video
+
+  $('#intro .scroll-to').click(function () {
+    $('#intro').delay(1000).fadeOut(300, function () {
+      $(this).remove();
+    });
+  });
+
+  // expandimos/contraemeos lista de proyectos
+
+  $('.menu-proyectos a').click(function () {
+    $('.sub-nav').toggleClass('collapsed');
+    $('i', this).toggleClass('fa-angle-down fa-angle-up');
+  });
+
 
   $('.proyect-desc').looper({
     interval: false

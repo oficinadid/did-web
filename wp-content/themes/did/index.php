@@ -28,11 +28,21 @@
                     <ul class="item">
                         <li>
                             <!-- <img src="<?php bloginfo('template_url'); ?>/img/slides-mb.jpg"> -->
-                             <span data-picture data-alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
-                                <span data-src="<?php bloginfo('template_url'); ?>/imgs/small.jpg"></span>
-                                <span data-src="<?php bloginfo('template_url'); ?>/imgs/medium.jpg"     data-media="(min-width: 400px)"></span>
-                                <span data-src="<?php bloginfo('template_url'); ?>/imgs/large.jpg"      data-media="(min-width: 800px)"></span>
-                                <span data-src="<?php bloginfo('template_url'); ?>/img/slides-mb.jpg" data-media="(min-width: 1000px)"></span>
+                             <span data-picture data-alt="Campaña digital Michelle Bachelet">
+                                <?php if (wpmd_is_phone()): ?>
+                                    <span data-src="<?php bloginfo('template_url'); ?>/img/mb/small.jpg"></span>
+                                    <span data-src="<?php bloginfo('template_url'); ?>/img/mb/medium.jpg" data-media="(min-width: 400px)"></span>
+
+                                <?php elseif (wpmd_is_tablet()):?>
+                                    <span data-src="<?php bloginfo('template_url'); ?>/img/mb/ipad-p-mb_1536x1854.jpg" data-media="(min-width: 760px)"></span>
+                                    <span data-src="<?php bloginfo('template_url'); ?>/img/mb/ipad-l-mb_2048x1342.jpg" data-media="(min-width: 960px)"></span>
+                                <?php else: ?>
+
+                                    <span data-src="<?php bloginfo('template_url'); ?>/img/mb/ipad-p-mb_1536x1854.jpg"></span>
+                                    <span data-src="<?php bloginfo('template_url'); ?>/img/mb/ipad-l-mb_2048x1342.jpg" data-media="(min-width: 768px)"></span>
+
+                                <?php endif ?>
+                               
 
                                 <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
                                 <noscript>
@@ -76,10 +86,10 @@
                 <div class="left">
                     <div class="main-nav">
                         <ul>
-                            <li><a href="<?php bloginfo('wpurl'); ?>" class="logo"></a></li>
-                            <li class="current"><a href="#">Proyectos <i class="fa fa-angle-down"></i></a></li>
-                            <li><a href="<?php bloginfo('wpurl'); ?>/about">About</a></li>
-                            <li><a href="#">Blog</a></li>
+                            <li class="menu-home"><a href="<?php bloginfo('wpurl'); ?>" class="logo"></a></li>
+                            <li class="current menu-proyectos"><a href="#">Proyectos <i class="fa fa-angle-down"></i></a></li>
+                            <li class="menu-about"><a href="<?php bloginfo('wpurl'); ?>/about">About</a></li>
+                            <li class="menu-blog"><a href="#">Blog</a></li>
                         </ul>
                     </div>
                     <div class="cf"></div>
