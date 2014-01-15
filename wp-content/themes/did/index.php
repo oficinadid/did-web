@@ -3,15 +3,15 @@
     <?php if (wpmd_is_notdevice()): ?>
 
         <div id="intro">
-            
+
             <div class="back">
                 <video src="<?php bloginfo('template_url'); ?>/video/HardDriveH264.mp4" autoplay loop></video>
-                <!-- <img src="<?php bloginfo('template_url'); ?>/img/intro-bg.jpg"> -->
+
             </div>
 
             <div class="front">
                 <div class="content">
-                    <h1 class="desc">DIDs es una oficina de diseño de servicios, comunicación y medios digitales especializada en política y problemas públicos.</h1>
+                    <h1 class="desc">DID es una oficina de diseño de servicios, comunicación y medios digitales especializada en política y problemas públicos.</h1>
                     <a href="#proyectos-cont" class="down scroll-to"></a>
                 </div>
             </div>
@@ -25,58 +25,232 @@
             <div id="proyectos" data-looper="go" data-interval="false" class="looper slide">
 
                 <div class="slides looper-inner">
-                    <ul class="item">
-                        <li>
-                            <!-- <img src="<?php bloginfo('template_url'); ?>/img/slides-mb.jpg"> -->
-                             <span data-picture data-alt="Campaña digital Michelle Bachelet">
-                                <?php if (wpmd_is_phone()): ?>
-                                    <span data-src="<?php bloginfo('template_url'); ?>/img/mb/small.jpg"></span>
-                                    <span data-src="<?php bloginfo('template_url'); ?>/img/mb/medium.jpg" data-media="(min-width: 400px)"></span>
+                    <ul class="item mb">
+                        <?php if (wpmd_is_notdevice()): ?>
+                            <li style="background-image:url(<?php bloginfo('template_url'); ?>/img/mb/ipad-l-2048x1342.jpg);"></li>
+                        <?php else: ?>
+                            <li>
+                                 <span data-picture data-alt="Campaña digital Michelle Bachelet">
+                                    <?php if (wpmd_is_phone()): ?>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/mb/iphone5-p-640x920.jpg" data-media="(min-width: 320px)"></span>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/mb/iphone5-l-1136x640.jpg" data-media="(min-width: 568px)"></span>
 
-                                <?php elseif (wpmd_is_tablet()):?>
-                                    <span data-src="<?php bloginfo('template_url'); ?>/img/mb/ipad-p-mb_1536x1854.jpg" data-media="(min-width: 760px)"></span>
-                                    <span data-src="<?php bloginfo('template_url'); ?>/img/mb/ipad-l-mb_2048x1342.jpg" data-media="(min-width: 960px)"></span>
-                                <?php else: ?>
+                                    <?php elseif (wpmd_is_tablet()):?>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/mb/ipad-p-1536x1854.jpg" data-media="(min-width: 760px)"></span>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/mb/ipad-l-2048x1342.jpg" data-media="(min-width: 960px)"></span>
+                                    <?php endif ?>
 
-                                    <span data-src="<?php bloginfo('template_url'); ?>/img/mb/ipad-p-mb_1536x1854.jpg"></span>
-                                    <span data-src="<?php bloginfo('template_url'); ?>/img/mb/ipad-l-mb_2048x1342.jpg" data-media="(min-width: 768px)"></span>
+                                    <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+                                    <noscript>
+                                        <img src="<?php bloginfo('template_url'); ?>/img/mb/ipad-l-2048x1342.jpg" alt="Campaña digital Michelle Bachelet">
+                                    </noscript>
+                                </span>
+                            </li>
+                        <?php endif ?>
 
-                                <?php endif ?>
-                               
+                    </ul>
+                    <ul class="item sc">
+                        <?php if (wpmd_is_notdevice()): ?>
+                            <li style="background-image:url(<?php bloginfo('template_url'); ?>/img/sc/ipad-l-2048x1342.jpg);"></li>
+                        <?php else: ?>
+                            <li>
+                                 <span data-picture data-alt="Sentidos Comunes">
+                                    <?php if (wpmd_is_phone()): ?>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/sc/iphone5-p-640x920.jpg" data-media="(min-width: 320px)"></span>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/sc/iphone5-l-1136x640.jpg" data-media="(min-width: 568px)"></span>
 
-                                <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
-                                <noscript>
-                                    <img src="small.jpg" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
-                                </noscript>
-                            </span>
+                                    <?php elseif (wpmd_is_tablet()):?>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/sc/ipad-p-1536x1854.jpg" data-media="(min-width: 760px)"></span>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/sc/ipad-l-2048x1342.jpg" data-media="(min-width: 960px)"></span>
+
+                                    <?php endif ?>
+
+
+                                    <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+                                    <noscript>
+                                        <img src="<?php bloginfo('template_url'); ?>/img/sc/ipad-l-2048x1342.jpg" alt="Sentidos Comunes">
+                                    </noscript>
+                                </span>
+                            </li>
+                        <?php endif ?>
+
                         </li>
                     </ul>
-                    <ul class="item">
-                        <li><img src="<?php bloginfo('template_url'); ?>/img/slides-sc.jpg"></li>
+                    <ul class="item mafi">
+                        <?php if (wpmd_is_notdevice()): ?>
+                            <li style="background-image:url(<?php bloginfo('template_url'); ?>/img/mafi/ipad-l-2048x1342.jpg);"></li>
+                        <?php else: ?>
+                            <li>
+                                 <span data-picture data-alt="MAFI">
+                                    <?php if (wpmd_is_phone()): ?>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/mafi/iphone5-p-640x920.jpg" data-media="(min-width: 320px)"></span>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/mafi/iphone5-l-1136x640.jpg" data-media="(min-width: 568px)"></span>
+
+                                    <?php elseif (wpmd_is_tablet()):?>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/mafi/ipad-p-1536x1854.jpg" data-media="(min-width: 760px)"></span>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/mafi/ipad-l-2048x1342.jpg" data-media="(min-width: 960px)"></span>
+
+                                    <?php endif ?>
+
+
+                                    <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+                                    <noscript>
+                                        <img src="<?php bloginfo('template_url'); ?>/img/mafi/ipad-l-2048x1342.jpg" alt="MAFI">
+                                    </noscript>
+                                </span>
+                            </li>
+                        <?php endif ?>
+
                     </ul>
-                    <ul class="item">
-                        <li><img src="<?php bloginfo('template_url'); ?>/img/slides-mafi.jpg"></li>
+                    <ul class="item re">
+                        <?php if (wpmd_is_notdevice()): ?>
+                            <li style="background-image:url(<?php bloginfo('template_url'); ?>/img/re/ipad-l-2048x1342.jpg);"></li>
+                        <?php else: ?>
+                            <li>
+                                 <span data-picture data-alt="Reforma Educacional">
+                                    <?php if (wpmd_is_phone()): ?>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/re/iphone5-p-640x920.jpg" data-media="(min-width: 320px)"></span>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/re/iphone5-l-1136x640.jpg" data-media="(min-width: 568px)"></span>
+
+                                    <?php elseif (wpmd_is_tablet()):?>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/re/ipad-p-1536x1854.jpg" data-media="(min-width: 760px)"></span>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/re/ipad-l-2048x1342.jpg" data-media="(min-width: 960px)"></span>
+
+                                    <?php endif ?>
+
+
+                                    <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+                                    <noscript>
+                                        <img src="<?php bloginfo('template_url'); ?>/img/re/ipad-l-2048x1342.jpg" alt="Reforma Educacional">
+                                    </noscript>
+                                </span>
+                            </li>
+                        <?php endif ?>
                     </ul>
-                    <ul class="item">
-                        <li><img src="<?php bloginfo('template_url'); ?>/img/slides-reforma.jpg"></li>
+                    <ul class="item fe">
+                        <?php if (wpmd_is_notdevice()): ?>
+                            <li style="background-image:url(<?php bloginfo('template_url'); ?>/img/fe/ipad-l-2048x1342.jpg);"></li>
+                        <?php else: ?>
+                            <li>
+                                 <span data-picture data-alt="FaceEnergy">
+                                    <?php if (wpmd_is_phone()): ?>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/fe/iphone5-p-640x920.jpg" data-media="(min-width: 320px)"></span>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/fe/iphone5-l-1136x640.jpg" data-media="(min-width: 568px)"></span>
+
+                                    <?php elseif (wpmd_is_tablet()):?>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/fe/ipad-p-1536x1854.jpg" data-media="(min-width: 760px)"></span>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/fe/ipad-l-2048x1342.jpg" data-media="(min-width: 960px)"></span>
+
+                                    <?php endif ?>
+
+
+                                    <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+                                    <noscript>
+                                        <img src="<?php bloginfo('template_url'); ?>/img/fe/ipad-l-2048x1342.jpg" alt="FaceEnergy">
+                                    </noscript>
+                                </span>
+                            </li>
+                        <?php endif ?>
                     </ul>
-                    <ul class="item">
-                        <li>
-                            <img src="<?php bloginfo('template_url'); ?>/img/intro-bg.jpg">
-                            <!-- <img src="<?php bloginfo('template_url'); ?>/img/slides-mafi.jpg"> -->
-                        </li>
+                    <ul class="item populus">
+                        <?php if (wpmd_is_notdevice()): ?>
+                            <li style="background-image:url(<?php bloginfo('template_url'); ?>/img/populus/ipad-l-2048x1342.jpg);"></li>
+                        <?php else: ?>
+                            <li>
+                                 <span data-picture data-alt="Populus">
+                                    <?php if (wpmd_is_phone()): ?>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/populus/iphone5-p-640x920.jpg" data-media="(min-width: 320px)"></span>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/populus/iphone5-l-1136x640.jpg" data-media="(min-width: 568px)"></span>
+
+                                    <?php elseif (wpmd_is_tablet()):?>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/populus/ipad-p-1536x1854.jpg" data-media="(min-width: 760px)"></span>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/populus/ipad-l-2048x1342.jpg" data-media="(min-width: 960px)"></span>
+
+                                    <?php endif ?>
+
+
+                                    <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+                                    <noscript>
+                                        <img src="<?php bloginfo('template_url'); ?>/img/populus/ipad-l-2048x1342.jpg" alt="Populus">
+                                    </noscript>
+                                </span>
+                            </li>
+                        <?php endif ?>
                     </ul>
-                    <ul class="item">
-                        <li><img src="<?php bloginfo('template_url'); ?>/img/slides-populus.jpg"></li>
+                    <ul class="item cancha">
+                       <?php if (wpmd_is_notdevice()): ?>
+                            <li style="background-image:url(<?php bloginfo('template_url'); ?>/img/cancha/ipad-l-2048x1342.jpg);"></li>
+                        <?php else: ?>
+                            <li>
+                                 <span data-picture data-alt="Cancha">
+                                    <?php if (wpmd_is_phone()): ?>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/cancha/iphone5-p-640x920.jpg" data-media="(min-width: 320px)"></span>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/cancha/iphone5-l-1136x640.jpg" data-media="(min-width: 568px)"></span>
+
+                                    <?php elseif (wpmd_is_tablet()):?>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/cancha/ipad-p-1536x1854.jpg" data-media="(min-width: 760px)"></span>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/cancha/ipad-l-2048x1342.jpg" data-media="(min-width: 960px)"></span>
+
+                                    <?php endif ?>
+
+
+                                    <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+                                    <noscript>
+                                        <img src="<?php bloginfo('template_url'); ?>/img/cancha/ipad-l-2048x1342.jpg" alt="Cancha">
+                                    </noscript>
+                                </span>
+                            </li>
+                        <?php endif ?>
                     </ul>
-                    <ul class="item">
-                        <li><img src="<?php bloginfo('template_url'); ?>/img/slides-cancha.jpg"></li>
+                    <ul class="item reconstruye">
+                        <?php if (wpmd_is_notdevice()): ?>
+                            <li style="background-image:url(<?php bloginfo('template_url'); ?>/img/reconstruye/ipad-l-2048x1342.jpg);"></li>
+                        <?php else: ?>
+                            <li>
+                                 <span data-picture data-alt="Reconstruye">
+                                    <?php if (wpmd_is_phone()): ?>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/reconstruye/iphone5-p-640x920.jpg" data-media="(min-width: 320px)"></span>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/reconstruye/iphone5-l-1136x640.jpg" data-media="(min-width: 568px)"></span>
+
+                                    <?php elseif (wpmd_is_tablet()):?>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/reconstruye/ipad-p-1536x1854.jpg" data-media="(min-width: 760px)"></span>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/reconstruye/ipad-l-2048x1342.jpg" data-media="(min-width: 960px)"></span>
+
+                                    <?php endif ?>
+
+
+                                    <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+                                    <noscript>
+                                        <img src="<?php bloginfo('template_url'); ?>/img/reconstruye/ipad-l-2048x1342.jpg" alt="Reconstruye">
+                                    </noscript>
+                                </span>
+                            </li>
+                        <?php endif ?>
                     </ul>
-                    <ul class="item">
-                        <li><img src="<?php bloginfo('template_url'); ?>/img/slides-reconstruye.jpg"></li>
-                    </ul>
-                    <ul class="item">
-                        <li><img src="<?php bloginfo('template_url'); ?>/img/slides-eure.jpg"></li>
+                    <ul class="item ieut-eure">
+                        <?php if (wpmd_is_notdevice()): ?>
+                            <li style="background-image:url(<?php bloginfo('template_url'); ?>/img/ieut-eure/ipad-l-2048x1342.jpg);"></li>
+                        <?php else: ?>
+                            <li>
+                                 <span data-picture data-alt="IEUT - EURE">
+                                    <?php if (wpmd_is_phone()): ?>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/ieut-eure/iphone5-p-640x920.jpg" data-media="(min-width: 320px)"></span>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/ieut-eure/iphone5-l-1136x640.jpg" data-media="(min-width: 568px)"></span>
+
+                                    <?php elseif (wpmd_is_tablet()):?>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/ieut-eure/ipad-p-1536x1854.jpg" data-media="(min-width: 760px)"></span>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/ieut-eure/ipad-l-2048x1342.jpg" data-media="(min-width: 960px)"></span>
+
+                                    <?php endif ?>
+
+
+                                    <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+                                    <noscript>
+                                        <img src="<?php bloginfo('template_url'); ?>/img/ieut-eure/ipad-l-2048x1342.jpg" alt="IEUT - EURE">
+                                    </noscript>
+                                </span>
+                            </li>
+                        <?php endif ?>
                     </ul>
                 </div>
 
@@ -133,10 +307,10 @@
 
                                 <div class="item">
                                     <h2 class="title">FaceEnergy  <span class="year"> 2012-2013</span></h2>
-                                    
+
                                     <p class="desc">FaceEnergy es un emprendimiento que pretende ser una plataforma online para entender, administrar y controlar remotamente el consumo energético del hogar. Su meta es ser la primera red social de la energía y los objetos. FaceEnergy es un emprendimiento conjunto entre DID y otros colaboradores.  </p>
                                 </div>
-                                
+
                                 <div class="item">
                                     <h2 class="title">Populus<span class="year"> 2013</span></h2>
                                     <span class="site"><i class="fa fa-angle-right"></i> <a href="http://populus.cl" target="_blank">http://populus.cl</a></span>
@@ -163,15 +337,10 @@
                                 </div>
                             </div>
 
-                           
-                            
+
+
                         </div>
-                        <!-- <div class="share">
-                            <ul>
-                                <li class="facebook"><div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div></li>
-                                <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-lang="es">Twittear</a></li>
-                            </ul>
-                        </div> -->
+
                     </div>
                 </div>
                 <div class="right">
@@ -200,6 +369,6 @@
                 </div>
             </menu>
 
-        </div>    
+        </div>
 
 <?php get_footer(); ?>
