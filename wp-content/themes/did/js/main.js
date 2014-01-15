@@ -83,4 +83,11 @@
     $('.navi-next span').html(titNext);
   });
 
+  skrollr.init();
+  // $.stellar();
+
+  //bg images
+
+  
+
 }(jQuery));

@@ -22,7 +22,7 @@
                 </div>
             </div>
 
-            <div class="imagen equipo">
+            <div class="imagen equipo" data-smooth-scrolling="off" data-top="background-position:center 0;" data-bottom="background-position:center -200px;">
                 <div class="texto">
                     <div class="container">
                         <span class="type">Equipo</span>
