@@ -25,7 +25,7 @@ and (orientation : portrait) {
 			ul {
 				li {
 					a {
-						padding:14px 15px;
+						padding:14px 31px 14px 30px;
 					}
 				}
 			}
@@ -102,7 +102,7 @@ and (orientation : landscape) {
 			ul {
 				li {
 					a {
-						padding:14px 15px;
+						padding:14px 31px 14px 30px;
 					}
 				}
 			}
@@ -141,7 +141,7 @@ and (orientation : portrait) {
 			ul {
 				li {
 					a {
-						padding: 14px 20px 14px 21px;
+						padding:14px 39px 14px 38px;
 					}
 				}
 			}
@@ -195,7 +195,7 @@ and (orientation : landscape) {
 			ul {
 				li {
 					a {
-						padding: 14px 20px 14px 21px;
+						padding:14px 39px 14px 38px;
 					}
 				}
 			}
@@ -222,6 +222,19 @@ and (orientation : landscape) {
 			}
 		}
 	}
+	#proyectos {
+		.slides {
+			ul {
+				li {
+					img {
+						width:auto;
+						height:100%;
+						margin:0 0 0 -45px;
+					}
+				}
+			}
+		}
+	}
 
 }
 
@@ -231,6 +244,18 @@ and (orientation : landscape) {
 
 @media only screen and (device-aspect-ratio: 40/71) and (orientation : landscape) {
 	
-	
+	#proyectos {
+		.slides {
+			ul {
+				li {
+					img {
+						width:100%;
+						height:auto;
+						margin:0;
+					}
+				}
+			}
+		}
+	}
 
 }
