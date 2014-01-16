@@ -54,13 +54,13 @@
                                 <div class="right">
                                     <h2><?php the_title(); ?>, <span class="cargo"><?php the_field('cargo') ?></span></h2>
                                     <?php the_content(); ?>
-                                    <div class="redes">
+				    <!-- <div class="redes">
                                         <span><i class="fa fa-angle-right"></i> Seguir en:</span>
                                         <ul>
                                             <li><a href="<?php the_field('linkedin') ?>" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                                             <li><a href="<?php the_field('twitter') ?>" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
                                         </ul>
-                                    </div>
+				    </div> -->
                                 </div>
                             </li>
 
@@ -81,18 +81,17 @@
                 <div class="main-nav">
                     <ul>
                         <li><a href="<?php bloginfo('wpurl'); ?>" class="logo"></a></li>
-                        <li><a href="<?php bloginfo('wpurl'); ?>/proyectos">Proyectos</a></li>
+			<li><a href="<?php bloginfo('wpurl'); ?>">Proyectos</a></li>
                         <li class="current"><a>About</a></li>
-                        <li><a href="#">Blog</a></li>
                     </ul>
                 </div>
             </div>
             <div class="right">
                 <div class="share">
                     <ul>
-                        <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+			<li><a href="https://www.facebook.com/oficinadid" class="facebook"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="https://twitter.com/oficinadid" class="twitter"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="http://instagram.com/oficinadid" class="instagram"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>

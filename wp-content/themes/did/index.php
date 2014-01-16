@@ -262,8 +262,7 @@
                         <ul>
                             <li class="menu-home"><a href="<?php bloginfo('wpurl'); ?>" class="logo"></a></li>
                             <li class="current menu-proyectos"><a href="#">Proyectos <i class="fa fa-angle-down"></i></a></li>
-                            <li class="menu-about"><a href="<?php bloginfo('wpurl'); ?>/about">About</a></li>
-                            
+			    <li class="menu-about"><a href="<?php bloginfo('wpurl'); ?>/about/">About</a></li>
                         </ul>
                     </div>
                     <div class="cf"></div>
@@ -300,7 +299,7 @@
                                 </div>
 
                                 <div class="item">
-                                    <h2 class="title">ReformaEducacional.cl  <span class="year"> 2011</span></h2>
+				    <h2 class="title">Reforma Educacional  <span class="year"> 2011</span></h2>
                                     <span class="site"><i class="fa fa-angle-right"></i> <a href="http://reformaeducacional.cl" target="_blank">http://reformaeducacional.cl</a></span>
                                     <p class="desc">Desarrollamos una campaña para crear conciencia sobre el problema educacional chileno y para ayudar a movilizar a los estudiantes. Nuestro enfoque fue construir una nueva identidad para los estudiantes movilizados de la CONFECH y diseñar elementos de protesta de código abierto.</p>
                                 </div>
@@ -346,9 +345,9 @@
                 <div class="right">
                     <div class="share">
                         <ul>
-                            <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+			    <li><a href="https://www.facebook.com/oficinadid" class="facebook"><i class="fa fa-facebook"></i></a></li>
+			    <li><a href="https://twitter.com/oficinadid" class="twitter"><i class="fa fa-twitter"></i></a></li>
+			    <li><a href="http://instagram.com/oficinadid" class="instagram"><i class="fa fa-instagram"></i></a></li>
                         </ul>
                     </div>
                 </div>

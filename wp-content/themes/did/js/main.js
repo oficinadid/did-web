@@ -1,5 +1,4 @@
 /*jslint browser: true*/
-/*global skrollr*/
 
 (function ($) {
   "use strict";
@@ -83,7 +82,7 @@
     $('.navi-next span').html(titNext);
   });
 
-  skrollr.init();
+  // skrollr.init();
 
 
 }(jQuery));
