@@ -263,7 +263,7 @@
                             <li class="menu-home"><a href="<?php bloginfo('wpurl'); ?>" class="logo"></a></li>
                             <li class="current menu-proyectos"><a href="#">Proyectos <i class="fa fa-angle-down"></i></a></li>
                             <li class="menu-about"><a href="<?php bloginfo('wpurl'); ?>/about">About</a></li>
-                            <li class="menu-blog"><a href="#">Blog</a></li>
+                            
                         </ul>
                     </div>
                     <div class="cf"></div>
