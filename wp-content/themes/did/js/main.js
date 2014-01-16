@@ -1,5 +1,5 @@
 /*jslint browser: true*/
-
+/*global skrollr*/
 
 (function ($) {
   "use strict";
@@ -84,10 +84,6 @@
   });
 
   skrollr.init();
-  // $.stellar();
 
-  //bg images
-
-  
 
 }(jQuery));
