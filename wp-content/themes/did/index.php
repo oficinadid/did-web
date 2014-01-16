@@ -33,7 +33,7 @@
                                  <span data-picture data-alt="Campaña digital Michelle Bachelet">
                                     <?php if (wpmd_is_phone()): ?>
                                         <span data-src="<?php bloginfo('template_url'); ?>/img/mb/iphone5-p-640x920.jpg" data-media="(min-width: 320px)"></span>
-                                        <span data-src="<?php bloginfo('template_url'); ?>/img/mb/iphone5-l-1136x640.jpg" data-media="(min-width: 568px)"></span>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/mb/iphone5-l-1136x640.jpg" data-media="(min-width: 480px)"></span>
 
                                     <?php elseif (wpmd_is_tablet()):?>
                                         <span data-src="<?php bloginfo('template_url'); ?>/img/mb/ipad-p-1536x1854.jpg" data-media="(min-width: 760px)"></span>
@@ -57,7 +57,7 @@
                                  <span data-picture data-alt="Sentidos Comunes">
                                     <?php if (wpmd_is_phone()): ?>
                                         <span data-src="<?php bloginfo('template_url'); ?>/img/sc/iphone5-p-640x920.jpg" data-media="(min-width: 320px)"></span>
-                                        <span data-src="<?php bloginfo('template_url'); ?>/img/sc/iphone5-l-1136x640.jpg" data-media="(min-width: 568px)"></span>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/sc/iphone5-l-1136x640.jpg" data-media="(min-width: 480px)"></span>
 
                                     <?php elseif (wpmd_is_tablet()):?>
                                         <span data-src="<?php bloginfo('template_url'); ?>/img/sc/ipad-p-1536x1854.jpg" data-media="(min-width: 760px)"></span>
@@ -84,7 +84,7 @@
                                  <span data-picture data-alt="MAFI">
                                     <?php if (wpmd_is_phone()): ?>
                                         <span data-src="<?php bloginfo('template_url'); ?>/img/mafi/iphone5-p-640x920.jpg" data-media="(min-width: 320px)"></span>
-                                        <span data-src="<?php bloginfo('template_url'); ?>/img/mafi/iphone5-l-1136x640.jpg" data-media="(min-width: 568px)"></span>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/mafi/iphone5-l-1136x640.jpg" data-media="(min-width: 480px)"></span>
 
                                     <?php elseif (wpmd_is_tablet()):?>
                                         <span data-src="<?php bloginfo('template_url'); ?>/img/mafi/ipad-p-1536x1854.jpg" data-media="(min-width: 760px)"></span>
@@ -110,7 +110,7 @@
                                  <span data-picture data-alt="Reforma Educacional">
                                     <?php if (wpmd_is_phone()): ?>
                                         <span data-src="<?php bloginfo('template_url'); ?>/img/re/iphone5-p-640x920.jpg" data-media="(min-width: 320px)"></span>
-                                        <span data-src="<?php bloginfo('template_url'); ?>/img/re/iphone5-l-1136x640.jpg" data-media="(min-width: 568px)"></span>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/re/iphone5-l-1136x640.jpg" data-media="(min-width: 480px)"></span>
 
                                     <?php elseif (wpmd_is_tablet()):?>
                                         <span data-src="<?php bloginfo('template_url'); ?>/img/re/ipad-p-1536x1854.jpg" data-media="(min-width: 760px)"></span>
@@ -135,7 +135,7 @@
                                  <span data-picture data-alt="FaceEnergy">
                                     <?php if (wpmd_is_phone()): ?>
                                         <span data-src="<?php bloginfo('template_url'); ?>/img/fe/iphone5-p-640x920.jpg" data-media="(min-width: 320px)"></span>
-                                        <span data-src="<?php bloginfo('template_url'); ?>/img/fe/iphone5-l-1136x640.jpg" data-media="(min-width: 568px)"></span>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/fe/iphone5-l-1136x640.jpg" data-media="(min-width: 480px)"></span>
 
                                     <?php elseif (wpmd_is_tablet()):?>
                                         <span data-src="<?php bloginfo('template_url'); ?>/img/fe/ipad-p-1536x1854.jpg" data-media="(min-width: 760px)"></span>
@@ -160,7 +160,7 @@
                                  <span data-picture data-alt="Populus">
                                     <?php if (wpmd_is_phone()): ?>
                                         <span data-src="<?php bloginfo('template_url'); ?>/img/populus/iphone5-p-640x920.jpg" data-media="(min-width: 320px)"></span>
-                                        <span data-src="<?php bloginfo('template_url'); ?>/img/populus/iphone5-l-1136x640.jpg" data-media="(min-width: 568px)"></span>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/populus/iphone5-l-1136x640.jpg" data-media="(min-width: 480px)"></span>
 
                                     <?php elseif (wpmd_is_tablet()):?>
                                         <span data-src="<?php bloginfo('template_url'); ?>/img/populus/ipad-p-1536x1854.jpg" data-media="(min-width: 760px)"></span>
@@ -185,7 +185,7 @@
                                  <span data-picture data-alt="Cancha">
                                     <?php if (wpmd_is_phone()): ?>
                                         <span data-src="<?php bloginfo('template_url'); ?>/img/cancha/iphone5-p-640x920.jpg" data-media="(min-width: 320px)"></span>
-                                        <span data-src="<?php bloginfo('template_url'); ?>/img/cancha/iphone5-l-1136x640.jpg" data-media="(min-width: 568px)"></span>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/cancha/iphone5-l-1136x640.jpg" data-media="(min-width: 480px)"></span>
 
                                     <?php elseif (wpmd_is_tablet()):?>
                                         <span data-src="<?php bloginfo('template_url'); ?>/img/cancha/ipad-p-1536x1854.jpg" data-media="(min-width: 760px)"></span>
@@ -210,7 +210,7 @@
                                  <span data-picture data-alt="Reconstruye">
                                     <?php if (wpmd_is_phone()): ?>
                                         <span data-src="<?php bloginfo('template_url'); ?>/img/reconstruye/iphone5-p-640x920.jpg" data-media="(min-width: 320px)"></span>
-                                        <span data-src="<?php bloginfo('template_url'); ?>/img/reconstruye/iphone5-l-1136x640.jpg" data-media="(min-width: 568px)"></span>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/reconstruye/iphone5-l-1136x640.jpg" data-media="(min-width: 480px)"></span>
 
                                     <?php elseif (wpmd_is_tablet()):?>
                                         <span data-src="<?php bloginfo('template_url'); ?>/img/reconstruye/ipad-p-1536x1854.jpg" data-media="(min-width: 760px)"></span>
@@ -235,7 +235,7 @@
                                  <span data-picture data-alt="IEUT - EURE">
                                     <?php if (wpmd_is_phone()): ?>
                                         <span data-src="<?php bloginfo('template_url'); ?>/img/ieut-eure/iphone5-p-640x920.jpg" data-media="(min-width: 320px)"></span>
-                                        <span data-src="<?php bloginfo('template_url'); ?>/img/ieut-eure/iphone5-l-1136x640.jpg" data-media="(min-width: 568px)"></span>
+                                        <span data-src="<?php bloginfo('template_url'); ?>/img/ieut-eure/iphone5-l-1136x640.jpg" data-media="(min-width: 480px)"></span>
 
                                     <?php elseif (wpmd_is_tablet()):?>
                                         <span data-src="<?php bloginfo('template_url'); ?>/img/ieut-eure/ipad-p-1536x1854.jpg" data-media="(min-width: 760px)"></span>
