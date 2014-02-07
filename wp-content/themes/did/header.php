@@ -9,7 +9,7 @@
 
         <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/main.css">
 
-        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
