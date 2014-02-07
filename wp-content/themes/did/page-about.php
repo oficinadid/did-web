@@ -100,7 +100,7 @@
                 <div class="main-nav">
                     <ul>
                         <li><a href="<?php bloginfo('wpurl'); ?>" class="logo"></a></li>
-			<li><a href="<?php bloginfo('wpurl'); ?>">="#"><?php echo (qtrans_getLanguage() == 'en') ? 'Projects' : 'Proyectos'; ?></a></li>
+			<li><a href="<?php bloginfo('wpurl'); ?>"><?php echo (qtrans_getLanguage() == 'en') ? 'Projects' : 'Proyectos'; ?></a></li>
                         <li class="current"><a>About</a></li>
                     </ul>
                 </div>
