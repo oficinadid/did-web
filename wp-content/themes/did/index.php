@@ -5,7 +5,12 @@
         <div id="intro">
 
             <div class="back">
-                <video src="<?php bloginfo('template_url'); ?>/video/HardDriveH264.mp4" autoplay loop></video>
+
+		<video autoplay loop>
+			<source src="<?php bloginfo('template_url'); ?>/video/HardDriveH264.webm" type="video/webm"></source>
+			<source src="<?php bloginfo('template_url'); ?>/video/HardDriveH264.ogv" type="video/ogg"></source>
+			<source src="<?php bloginfo('template_url'); ?>/video/HardDriveH264.mp4" type="video/mp4"></source>
+		</video>
 
             </div>
 
