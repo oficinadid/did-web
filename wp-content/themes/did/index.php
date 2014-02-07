@@ -17,6 +17,8 @@
             <div class="front">
                 <div class="content">
                     <h1 class="desc">DID es una oficina de diseño de servicios, comunicación y medios digitales especializada en política y problemas públicos.</h1>
+					<a class="lang" href="http://oficinadid.cl/es/">Ir al sitio en Español</a>
+					<a class="lang" href="http://oficinadid.cl">Go to English version</a>
                     <a href="#proyectos-cont" class="down scroll-to"></a>
                 </div>
             </div>
