@@ -54,7 +54,8 @@
 
   // expandimos/contraemeos lista de proyectos
 
-  $('.menu-proyectos a').click(function () {
+  $('.menu-proyectos a').click(function (e) {
+e.preventDefault();
     $('.sub-nav').toggleClass('collapsed');
     $('i', this).toggleClass('fa-angle-down fa-angle-up');
   });
