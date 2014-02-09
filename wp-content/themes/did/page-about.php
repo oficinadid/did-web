@@ -10,9 +10,9 @@
                         <h1 class="desc">
 
 						<?php if (qtrans_getLanguage() == 'en'): ?>
-							DID is a design agency that produces services, communication and digital media with focus on politics and public issues.
+							<?php echo get_field('about_en', 6) ?>
 						<?php else: ?>
-							DID es una oficina de diseño de servicios, comunicación y medios digitales especializada en política y problemas públicos.
+							<?php echo get_field('about_es', 6) ?>
 						<?php endif ?>
                         </h1>
                     </div>
@@ -21,17 +21,16 @@
 
             <div class="content about">
                 <div class="container">
-                	<?php if (qtrans_getLanguage() == 'en'): ?>
-                		<p>At DID we create strategies, research, products and services supported by an open design process. We use design as a multidimensional tool to create value for companies, institutions, social organizations and individuals to help them reach their development goals.</p>
 
-	                    <p>We collaborate with our clients in a wide array of projects of diverse scale and scope. Furthermore our independent initiatives allow us to identify new business opportunities by exploring new markets and services. DID supports its action in the expertise of a professional network that over the past 10 years, has played a key role in the integration of design thinking in to social, economical and political activities in Chile.</p>
+
+
+                	<?php echo apply_filters('the_content', get_post_field('post_content', 6 )); ?>
+
+	                <?php if (qtrans_getLanguage() == 'en'): ?>
 
 	                    <a href="mailto:info@did.is" class="contact" target="_blank">Contact us at info@did.is</a>
 
                 	<?php else: ?>
-                		<p>En DID creamos estrategias, investigación, productos y servicios basados en un proceso de diseño abierto. Utilizamos el diseño y la comunicación como herramientas multidimensionales de creación de valor para empresas, instituciones, organizaciones sociales e individuos.</p>
-
-	                    <p>Nuestras iniciativas y emprendimientos independientes nos permiten identificar oportunidades de desarrollo e innovación mediante la exploración de nuevos medios, mercados y servicios. DID apoya su acción en la experiencia de una red de profesionales que en los últimos 10 años, ha jugado un papel clave en la integración del diseño y la comunicación en actividades sociales, económicas y políticas en Chile.</p>
 
 	                    <a href="mailto:info@did.is" class="contact" target="_blank">Contáctanos en info@did.is</a>
 
@@ -45,11 +44,11 @@
                     <div class="container">
                     	<?php if (qtrans_getLanguage() == 'en'): ?>
                     		<span class="type">Team</span>
-							<h1 class="desc">Contamos con un equipo de colaboradores de diversas disciplinas que nos permite abordar proyectos de diversa escala y alcance. Este equipo está liderado por 4 socios fundadores.</h1>
+							<h1 class="desc"><?php echo get_field('equipo_en', 6) ?></h1>
 
                     	<?php else: ?>
                     		<span class="type">Equipo</span>
-							<h1 class="desc">Contamos con un equipo de colaboradores de diversas disciplinas que nos permite abordar proyectos de diversa escala y alcance. Este equipo está liderado por 4 socios fundadores.</h1>
+							<h1 class="desc"><?php echo get_field('equipo_es', 6) ?></h1>
 
                     	<?php endif ?>
 
@@ -80,6 +79,22 @@
                                 <div class="right">
                                     <h2><?php the_title(); ?>, <span class="cargo"><?php the_field('cargo') ?></span></h2>
                                     <?php the_content(); ?>
+
+                                    <?php if ((get_field('linkedin')) || get_field('twitter')): ?>
+
+	                                    <div class="redes">
+	                                        <span><i class="fa fa-angle-right"></i> <?php echo (qtrans_getLanguage() == 'en') ? 'Follow at' : 'Seguir en:'; ?></span>
+	                                        <ul>
+	                                        	<?php if (get_field('linkedin')): ?>
+	                                        		<li><a href="<?php the_field('linkedin') ?>" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+	                                        	<?php elseif(get_field('twitter')): ?>
+	                                        		<li><a href="<?php the_field('twitter') ?>" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+	                                        	<?php endif ?>
+
+	                                        </ul>
+	                                    </div>
+                                    <?php endif ?> <!- fin redes -->
+
                                 </div>
                             </li>
 
@@ -100,7 +115,7 @@
                 <div class="main-nav">
                     <ul>
                         <li><a href="<?php bloginfo('wpurl'); ?>" class="logo"></a></li>
-			<li><a href="<?php bloginfo('wpurl'); ?>"><?php echo (qtrans_getLanguage() == 'en') ? 'Projects' : 'Proyectos'; ?></a></li>
+			<li><a href="<?php bloginfo('wpurl'); ?>/#proyectos"><?php echo (qtrans_getLanguage() == 'en') ? 'Projects' : 'Proyectos'; ?></a></li>
                         <li class="current"><a>About</a></li>
                     </ul>
                 </div>
