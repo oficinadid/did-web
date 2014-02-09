@@ -19,12 +19,12 @@
                 <div class="content">
                 	<?php if (qtrans_getLanguage() == 'en'): ?>
 
-                		<h1 class="desc">DID is a design agency that produces services, communication and digital media with focus on politics and public issues.</h1>
+                		<h1 class="desc"><?php echo get_field('tagline_en', 47); ?></h1>
 
 					<a class="lang" href="http://oficinadid.cl/es/">Ir al sitio en Español</a>
 
                 	<?php else: ?>
-                		<h1 class="desc">DID es una oficina de diseño de servicios, comunicación y medios digitales especializada en política y problemas públicos.</h1>
+                		<h1 class="desc"><?php echo get_field('tagline_es', 47); ?></h1>
 
 					<a class="lang" href="http://oficinadid.cl">Go to English version</a>
 
