@@ -1,41 +1,5 @@
 <?php get_header(); ?>
 
-    <?php if (wpmd_is_notdevice()): ?>
-
-        <div id="intro">
-
-            <div class="back">
-
-		<video autoplay loop>
-			<source src="<?php bloginfo('template_url'); ?>/video/HardDriveH264.webm" type="video/webm"></source>
-			<source src="<?php bloginfo('template_url'); ?>/video/HardDriveH264.ogv" type="video/ogg"></source>
-			<source src="<?php bloginfo('template_url'); ?>/video/HardDriveH264.mp4" type="video/mp4"></source>
-		</video>
-
-            </div>
-
-            <div class="front">
-                <div class="content">
-                	<?php if (qtrans_getLanguage() == 'en'): ?>
-                		<h1 class="desc">DID is a design agency that produces services, communication and digital media with focus on politics and public issues.</h1>
-
-					<a class="lang" href="http://oficinadid.cl/es/">Ir al sitio en Español</a>
-
-                	<?php else: ?>
-                		<h1 class="desc">DID es una oficina de diseño de servicios, comunicación y medios digitales especializada en política y problemas públicos.</h1>
-
-					<a class="lang" href="http://oficinadid.cl">Go to English version</a>
-
-                	<?php endif ?>
-
-                    <a href="#proyectos-cont" class="down scroll-to"></a>
-                </div>
-            </div>
-
-        </div>
-
-    <?php endif ?>
-
         <div id="proyectos-cont">
 
             <div id="proyectos" data-looper="go" data-interval="false" class="looper slide">
@@ -277,8 +241,8 @@
                     <div class="main-nav">
                         <ul>
                             <li class="menu-home"><a href="<?php bloginfo('wpurl'); ?>" class="logo"></a></li>
+                            <li class="menu-about current"><a href="<?php bloginfo('wpurl'); ?>/about/"><?php echo (qtrans_getLanguage() == 'en') ? 'About' : 'Acerca de'; ?></a></li>
                             <li class="current menu-proyectos"><a href="#"><?php echo (qtrans_getLanguage() == 'en') ? 'Projects' : 'Proyectos'; ?> <i class="fa fa-angle-down"></i></a></li>
-			    <li class="menu-about"><a href="<?php bloginfo('wpurl'); ?>/about/">About</a></li>
                         </ul>
                     </div>
                     <div class="cf"></div>
@@ -297,7 +261,8 @@
                         <div class="proyect-desc looper xfade">
                             <div id="desc-looper" class="looper-inner">
                                 <div class="item">
-                                    <h2 class="title">Michelle Bachelet<span class="year"> 2013</span></h2>
+                                    <h2 class="title">Michelle Bachelet</h2>
+                                    <span class="year">2013</span>
                                     <span class="site"><i class="fa fa-angle-right"></i> <a href="http://michellebachelet.cl" target="_blank">http://michellebachelet.cl</a></span>
 
                                     <?php if (qtrans_getLanguage() == 'en'): ?>
@@ -311,7 +276,8 @@
                                 </div>
 
                                 <div class="item">
-                                    <h2 class="title">Sentidos Comunes<span class="year"> 2011-2013</span></h2>
+                                    <h2 class="title">Sentidos Comunes</h2>
+                                    <span class="year">2011-2013</span>
                                     <span class="site"><i class="fa fa-angle-right"></i> <a href="http://sentidoscomunes.cl" target="_blank">http://sentidoscomunes.cl</a></span>
 
                                     <?php if (qtrans_getLanguage() == 'en'): ?>
@@ -325,7 +291,8 @@
                                 </div>
 
                                 <div class="item">
-                                    <h2 class="title">Mafi.tv  <span class="year"> 2012</span></h2>
+                                    <h2 class="title">Mafi.tv  </h2>
+                                    <span class="year">2012</span>
                                     <span class="site"><i class="fa fa-angle-right"></i> <a href="http://mafi.tv" target="_blank">http://mafi.tv</a></span>
 
                                     <?php if (qtrans_getLanguage() == 'en'): ?>
@@ -339,7 +306,8 @@
                                 </div>
 
                                 <div class="item">
-				    				<h2 class="title">Reforma Educacional  <span class="year"> 2011</span></h2>
+				    				<h2 class="title">Reforma Educacional  </h2>
+                                    <span class="year">2011</span>
                                     <span class="site"><i class="fa fa-angle-right"></i> <a href="http://reformaeducacional.cl" target="_blank">http://reformaeducacional.cl</a></span>
 
                                     <?php if (qtrans_getLanguage() == 'en'): ?>
@@ -353,7 +321,8 @@
                                 </div>
 
                                 <div class="item">
-                                    <h2 class="title">FaceEnergy  <span class="year"> 2012-2013</span></h2>
+                                    <h2 class="title">FaceEnergy  </h2>
+                                    <span class="year">2012-2013</span>
 
                                     <?php if (qtrans_getLanguage() == 'en'): ?>
                                     	<p class="desc">FaceEnergy is a startup that wants to be an online platform to understand, manage and remotely control the energy consumption of the home. Their goal is to be the first social network of energy and things. FaceEnergy is a joint startup between DID and other partners.  </p>
@@ -367,7 +336,8 @@
                                 </div>
 
                                 <div class="item">
-                                    <h2 class="title">Populus<span class="year"> 2013</span></h2>
+                                    <h2 class="title">Populus</h2>
+                                    <span class="year">2013</span>
                                     <span class="site"><i class="fa fa-angle-right"></i> <a href="http://populus.cl" target="_blank">http://populus.cl</a></span>
 
                                     <?php if (qtrans_getLanguage() == 'en'): ?>
@@ -381,7 +351,8 @@
                                 </div>
 
                                 <div class="item">
-                                    <h2 class="title">Cancha Chile  <span class="year"> 2013</span></h2>
+                                    <h2 class="title">Cancha Chile  </h2>
+                                    <span class="year">2013</span>
                                     <span class="site"><i class="fa fa-angle-right"></i> <a href="http://canchachile.cl" target="_blank">http://canchachile.cl</a></span>
 
                                     <?php if (qtrans_getLanguage() == 'en'): ?>
@@ -395,7 +366,8 @@
                                 </div>
 
                                 <div class="item">
-                                    <h2 class="title">Reconstruye<span class="year"> 2010-2012</span></h2>
+                                    <h2 class="title">Reconstruye</h2>
+                                    <span class="year">2010-2012</span>
                                     <span class="site"><i class="fa fa-angle-right"></i> <a href="http://www.reconstruye.org/" target="_blank">http://www.reconstruye.org</a></span>
 
                                     <?php if (qtrans_getLanguage() == 'en'): ?>
@@ -409,7 +381,8 @@
                                 </div>
 
                                 <div class="item">
-                                    <h2 class="title">IEUT / EURE  <span class="year"> 2010-2011</span></h2>
+                                    <h2 class="title">IEUT / EURE  </h2>
+                                    <span class="year">2010-2011</span>
                                     <span class="site"><i class="fa fa-angle-right"></i> <a href="http://ieut.cl" target="_blank">http://ieut.cl</a></span>
                                     <span class="site"><i class="fa fa-angle-right"></i> <a href="http://eure.cl" target="_blank">http://eure.cl</a></span>
 
@@ -432,10 +405,14 @@
                 </div>
                 <div class="right">
                     <div class="share">
-                        <ul>
-			    <li><a href="https://www.facebook.com/oficinadid" class="facebook"><i class="fa fa-facebook"></i></a></li>
-			    <li><a href="https://twitter.com/oficinadid" class="twitter"><i class="fa fa-twitter"></i></a></li>
-			    <li><a href="http://instagram.com/oficinadid" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                        <ul class="social">
+            			    <li><a href="https://www.facebook.com/oficinadid" class="facebook"><i class="fa fa-facebook"></i></a></li>
+            			    <li><a href="https://twitter.com/oficinadid" class="twitter"><i class="fa fa-twitter"></i></a></li>
+            			    <li><a href="http://instagram.com/oficinadid" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                        <ul class="lang">
+                            <li><a href="#" class="esp current">Esp</a></li>
+                            <li><a href="#" class="eng">Eng</a></li>
                         </ul>
                     </div>
                 </div>
