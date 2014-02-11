@@ -11,6 +11,7 @@
     $('#intro .front').height($(window).height());
     $('#proyectos').height($(window).height());
     $('#proyectos .slides').height($(window).height());
+    $('.imagen.about').height($(window).height());
 
     // Auto margin-top #intro .content
     var mtopcontent = ($('#intro').height() / 2) - ($('#intro .front .content').outerHeight() / 2);

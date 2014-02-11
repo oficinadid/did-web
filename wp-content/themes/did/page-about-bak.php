@@ -1,6 +1,34 @@
 <?php get_header(); ?>
 
 
+<<<<<<< HEAD
+        <div id="about">
+
+            <div class="imagen about">
+                <div class="texto">
+                    <div class="container">
+                        <span class="type">About</span>
+                        <h1 class="desc">
+
+						<?php if (qtrans_getLanguage() == 'en'): ?>
+							<?php echo get_field('about_en', 6) ?>
+						<?php else: ?>
+							<?php echo get_field('about_es', 6) ?>
+						<?php endif ?>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content about">
+                <div class="container">
+
+
+
+                	<?php echo apply_filters('the_content', get_post_field('post_content', 6 )); ?>
+
+	                <?php if (qtrans_getLanguage() == 'en'): ?>
+=======
     <div id="about">
 
         <div id="intro">
@@ -22,10 +50,12 @@
             <div class="front">
                 <div class="content">
                     <?php if (qtrans_getLanguage() == 'en'): ?>
-						<?php echo get_field('about_en', 6) ?>
-					<?php else: ?>
-						<?php echo get_field('about_es', 6) ?>
-					<?php endif ?>
+                        <h1 class="desc">DID is a design agency that produces services, communication and digital media with focus on politics and public issues.</h1>
+
+                    <?php else: ?>
+                        <h1 class="desc">DID es una oficina de diseño de servicios, comunicación y medios digitales especializada en política y problemas públicos.</h1>
+
+                    <?php endif ?>
 
                     <a href="#proyectos-cont" class="down scroll-to"></a>
                 </div>
@@ -35,13 +65,22 @@
 
         <div class="content about">
             <div class="container">
-            	<?php echo apply_filters('the_content', get_post_field('post_content', 6 )); ?>
-
             	<?php if (qtrans_getLanguage() == 'en'): ?>
+            		<p>At DID we create strategies, research, products and services supported by an open design process. We use design as a multidimensional tool to create value for companies, institutions, social organizations and individuals to help them reach their development goals.</p>
+>>>>>>> 1b3c9e7397b9b88978a550858f853d8889d67cc5
 
+                    <p>We collaborate with our clients in a wide array of projects of diverse scale and scope. Furthermore our independent initiatives allow us to identify new business opportunities by exploring new markets and services. DID supports its action in the expertise of a professional network that over the past 10 years, has played a key role in the integration of design thinking in to social, economical and political activities in Chile.</p>
+
+<<<<<<< HEAD
+                	<?php else: ?>
+=======
                     <a href="mailto:info@did.is" class="contact" target="_blank">Contact us at info@did.is</a>
 
-                <?php else: ?>
+            	<?php else: ?>
+            		<p>En DID creamos estrategias, investigación, productos y servicios basados en un proceso de diseño abierto. Utilizamos el diseño y la comunicación como herramientas multidimensionales de creación de valor para empresas, instituciones, organizaciones sociales e individuos.</p>
+>>>>>>> 1b3c9e7397b9b88978a550858f853d8889d67cc5
+
+                    <p>Nuestras iniciativas y emprendimientos independientes nos permiten identificar oportunidades de desarrollo e innovación mediante la exploración de nuevos medios, mercados y servicios. DID apoya su acción en la experiencia de una red de profesionales que en los últimos 10 años, ha jugado un papel clave en la integración del diseño y la comunicación en actividades sociales, económicas y políticas en Chile.</p>
 
                     <a href="mailto:info@did.is" class="contact" target="_blank">Contáctanos en info@did.is</a>
 

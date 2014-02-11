@@ -1,42 +1,5 @@
 <?php get_header(); ?>
-
-    <?php if (wpmd_is_notdevice()): ?>
-
-        <div id="intro">
-
-            <div class="back">
-
-		<video autoplay loop>
-			<source src="<?php bloginfo('template_url'); ?>/video/HardDriveH264.webm" type="video/webm"></source>
-			<source src="<?php bloginfo('template_url'); ?>/video/HardDriveH264.ogv" type="video/ogg"></source>
-			<source src="<?php bloginfo('template_url'); ?>/video/HardDriveH264.mp4" type="video/mp4"></source>
-		</video>
-
-            </div>
-		<?php $listaProyectos = get_posts( array('post_type' => 'proyecto', 'posts_per_page' => -1, 'no_found_rows' => true, 'orderby' => 'menu_order', 'order' => 'ASC')); ?>
-
-            <div class="front">
-                <div class="content">
-                	<?php if (qtrans_getLanguage() == 'en'): ?>
-
-                		<h1 class="desc"><?php echo get_field('tagline_en', 37); ?></h1>
-
-					<a class="lang" href="http://oficinadid.cl/es/">Ir al sitio en Español</a>
-
-                	<?php else: ?>
-                		<h1 class="desc"><?php echo get_field('tagline_es', 37); ?></h1>
-
-					<a class="lang" href="http://oficinadid.cl">Go to English version</a>
-
-                	<?php endif ?>
-
-                    <a href="#proyectos-cont" class="down scroll-to"></a>
-                </div>
-            </div>
-
-        </div>
-
-    <?php endif ?>
+	<?php $listaProyectos = get_posts( array('post_type' => 'proyecto', 'posts_per_page' => -1, 'no_found_rows' => true, 'orderby' => 'menu_order', 'order' => 'ASC')); ?>
 
         <div id="proyectos-cont">
 
@@ -45,14 +8,15 @@
                 <div class="slides looper-inner">
                 	<?php foreach ($listaProyectos as $proyecto): ?>
                 		<ul class="item <?php echo $proyecto->post_name ?>">
+                			<?php
+                        		$ipad_l   = get_field('ipad_landscape', $proyecto->ID);
+                        		$ipad_p   = get_field('ipad_portrait', $proyecto->ID);
+                        		$iphone_l = get_field('iphone_landscape', $proyecto->ID);
+                        		$iphone_p = get_field('iphone_portrait', $proyecto->ID);
+                        	?>
 
 	                        <?php if (wpmd_is_notdevice()): ?>
-	                        	<?php
-	                        		$ipad_l   = get_field('ipad_landscape', $proyecto->ID);
-	                        		$ipad_p   = get_field('ipad_portrait', $proyecto->ID);
-	                        		$iphone_l = get_field('iphone_landscape', $proyecto->ID);
-	                        		$iphone_p = get_field('iphone_portrait', $proyecto->ID);
-	                        	?>
+
 	                            <li style="background-image:url(<?php echo wp_get_attachment_url($ipad_l) ?>);"></li>
 	                        <?php else: ?>
 	                            <li>
@@ -87,8 +51,8 @@
                     <div class="main-nav">
                         <ul>
                             <li class="menu-home"><a href="<?php bloginfo('wpurl'); ?>" class="logo"></a></li>
+                            <li class="menu-about current"><a href="<?php bloginfo('wpurl'); ?>/about/"><?php echo (qtrans_getLanguage() == 'en') ? 'About' : 'Acerca de'; ?></a></li>
                             <li class="current menu-proyectos"><a href="#"><?php echo (qtrans_getLanguage() == 'en') ? 'Projects' : 'Proyectos'; ?> <i class="fa fa-angle-down"></i></a></li>
-			    <li class="menu-about"><a href="<?php bloginfo('wpurl'); ?>/about/">About</a></li>
                         </ul>
                     </div>
                     <div class="cf"></div>
@@ -129,10 +93,14 @@
                 </div>
                 <div class="right">
                     <div class="share">
-                        <ul>
-			    <li><a href="https://www.facebook.com/oficinadid" class="facebook"><i class="fa fa-facebook"></i></a></li>
-			    <li><a href="https://twitter.com/oficinadid" class="twitter"><i class="fa fa-twitter"></i></a></li>
-			    <li><a href="http://instagram.com/oficinadid" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                        <ul class="social">
+            			    <li><a href="https://www.facebook.com/oficinadid" class="facebook"><i class="fa fa-facebook"></i></a></li>
+            			    <li><a href="https://twitter.com/oficinadid" class="twitter"><i class="fa fa-twitter"></i></a></li>
+            			    <li><a href="http://instagram.com/oficinadid" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                        <ul class="lang">
+                            <li><a href="#" class="esp current">Esp</a></li>
+                            <li><a href="#" class="eng">Eng</a></li>
                         </ul>
                     </div>
                 </div>
