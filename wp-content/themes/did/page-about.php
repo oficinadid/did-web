@@ -27,13 +27,13 @@
 						<?php echo get_field('about_es', 6) ?>
 					<?php endif ?>
 
-                    <a href="#proyectos-cont" class="down scroll-to"></a>
+                    <a href="#about-cont" class="down scroll-to"></a>
                 </div>
             </div>
 
         </div>
 
-        <div class="content about">
+        <div id="about-cont" class="content about">
             <div class="container">
             	<?php echo apply_filters('the_content', get_post_field('post_content', 6 )); ?>
 
@@ -128,7 +128,7 @@
                     <span class="disc">DID 2014 | Todos los derechos resevados</span>
                 </div>
                 <div class="right">
-                    <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                    <div class="fb-like" data-href="http://oficinadid.cl" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
                 </div>
                 <div class="cf"></div>
             </div>
@@ -142,20 +142,25 @@
                 <ul>
                     <li><a href="<?php bloginfo('wpurl'); ?>" class="logo"></a></li>
                     <li class="current"><a><?php echo (qtrans_getLanguage() == 'en') ? 'About' : 'Acerca de'; ?></a></li>
-                    <li><a href="<?php bloginfo('wpurl'); ?>"><?php echo (qtrans_getLanguage() == 'en') ? 'Projects' : 'Proyectos'; ?></a></li>
+                    <?php if (qtrans_getLanguage() == 'en'): ?>
+                    	<li><a href="http://oficinadid.cl/en/projects/">Projects</a></li>
+                    <?php else: ?>
+                    	<li><a href="http://oficinadid.cl/es/proyectos/">Proyectos</a></li>
+                    <?php endif ?>
+
                 </ul>
             </div>
         </div>
         <div class="right">
             <div class="share">
                 <ul class="social">
-        			<li><a href="https://www.facebook.com/oficinadid" class="facebook"><i class="fa fa-facebook"></i></a></li>
-        			<li><a href="https://twitter.com/oficinadid" class="twitter"><i class="fa fa-twitter"></i></a></li>
-        			<li><a href="http://instagram.com/oficinadid" class="instagram"><i class="fa fa-instagram"></i></a></li>
+        			<li><a href="https://www.facebook.com/oficinadid" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        			<li><a href="https://twitter.com/oficinadid" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        			<li><a href="http://instagram.com/oficinadid" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
                 </ul>
                 <ul class="lang">
-                    <li><a href="#" class="esp current">Esp</a></li>
-                    <li><a href="#" class="eng">Eng</a></li>
+                    <li><a href="http://oficinadid.cl/es/" class="esp <?php echo (qtrans_getLanguage() == 'en') ? '' : 'current'; ?>">Esp</a></li>
+                    <li><a href="http://oficinadid.cl/en/" class="eng <?php echo (qtrans_getLanguage() == 'en') ? 'current' : ''; ?>">Eng</a></li>
                 </ul>
             </div>
         </div>

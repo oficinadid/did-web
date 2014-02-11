@@ -99,8 +99,8 @@
             			    <li><a href="http://instagram.com/oficinadid" class="instagram"><i class="fa fa-instagram"></i></a></li>
                         </ul>
                         <ul class="lang">
-                            <li><a href="#" class="esp current">Esp</a></li>
-                            <li><a href="#" class="eng">Eng</a></li>
+                           <li><a href="http://oficinadid.cl/es/" class="esp <?php echo (qtrans_getLanguage() == 'en') ? '' : 'current'; ?>">Esp</a></li>
+                    <li><a href="http://oficinadid.cl/en/" class="eng <?php echo (qtrans_getLanguage() == 'en') ? 'current' : ''; ?>">Eng</a></li>
                         </ul>
                     </div>
                 </div>
