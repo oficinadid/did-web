@@ -95,7 +95,7 @@
                                 	<?php if (qtrans_getLanguage() == 'en'): ?>
                                 		<?php the_field('cargo_en') ?>
                                 	<?php else: ?>
-                                		<?php the_field('cargo_es') ?>
+                                		<?php the_field('cargo') ?>
                                 	<?php endif ?>
 
                                 </span></h2>
