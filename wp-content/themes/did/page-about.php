@@ -137,7 +137,7 @@
                     <span class="disc">DID 2014 | Todos los derechos resevados</span>
                 </div>
                 <div class="right">
-                    <div class="fb-like" data-href="http://oficinadid.cl" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                    <div class="fb-like" data-href="https://www.facebook.com/oficinadid" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
                 </div>
                 <div class="cf"></div>
             </div>
