@@ -52,7 +52,7 @@
         </div>
 
 
-            <div class="imagen equipo" data-smooth-scrolling="off" data-top="background-position:center 0;" data-bottom="background-position:center -200px;">
+            <div class="imagen equipo" data-smooth-scrolling="off" data-top="background-position:center -150;" data-bottom="background-position:center -300px;">
                 <div class="texto">
                     <div class="container">
                     	<?php if (qtrans_getLanguage() == 'en'): ?>
