@@ -84,7 +84,7 @@ e.preventDefault();
     $('.navi-next span').html(titNext);
   });
 
-  // skrollr.init();
+  skrollr.init();
 
 
 }(jQuery));
