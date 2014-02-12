@@ -51,7 +51,7 @@
                     <div class="main-nav">
                         <ul>
                             <li class="menu-home"><a href="<?php bloginfo('wpurl'); ?>" class="logo"></a></li>
-                            <li class="menu-about current"><a href="<?php bloginfo('wpurl'); ?>/about/"><?php echo (qtrans_getLanguage() == 'en') ? 'About' : 'Acerca de'; ?></a></li>
+                            <li class="menu-about"><a href="<?php bloginfo('wpurl'); ?>/about/"><?php echo (qtrans_getLanguage() == 'en') ? 'About' : 'Acerca de'; ?></a></li>
                             <li class="current menu-proyectos"><a href="#"><?php echo (qtrans_getLanguage() == 'en') ? 'Projects' : 'Proyectos'; ?> <i class="fa fa-angle-down"></i></a></li>
                         </ul>
                     </div>
@@ -94,9 +94,9 @@
                 <div class="right">
                     <div class="share">
                         <ul class="social">
-            			    <li><a href="https://www.facebook.com/oficinadid" class="facebook"><i class="fa fa-facebook"></i></a></li>
-            			    <li><a href="https://twitter.com/oficinadid" class="twitter"><i class="fa fa-twitter"></i></a></li>
-            			    <li><a href="http://instagram.com/oficinadid" class="instagram"><i class="fa fa-instagram"></i></a></li>
+            			    <li><a href="https://www.facebook.com/oficinadid" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            			    <li><a href="https://twitter.com/oficinadid" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            			    <li><a href="http://instagram.com/oficinadid" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
                         </ul>
                         <ul class="lang">
                            <li><a href="http://oficinadid.cl/es/" class="esp <?php echo (qtrans_getLanguage() == 'en') ? '' : 'current'; ?>">Esp</a></li>
