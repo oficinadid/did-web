@@ -90,7 +90,15 @@
                                 <?php the_post_thumbnail(); ?>
                             </div>
                             <div class="right">
-                                <h2><?php the_title(); ?>, <span class="cargo"><?php the_field('cargo') ?></span></h2>
+                                <h2><?php the_title(); ?>,
+                                <span class="cargo">
+                                	<?php if (qtrans_getLanguage() == 'en'): ?>
+                                		<?php the_field('cargo_en') ?>
+                                	<?php else: ?>
+                                		<?php the_field('cargo_es') ?>
+                                	<?php endif ?>
+
+                                </span></h2>
                                 <?php the_content(); ?>
 
                                 <?php if ((get_field('linkedin')) || get_field('twitter')): ?>
