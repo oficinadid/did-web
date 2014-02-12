@@ -83,8 +83,12 @@ e.preventDefault();
     $('.navi-prev span').html(titPrev);
     $('.navi-next span').html(titNext);
   });
-
-  skrollr.init();
+  if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+    skrollr.init({
+        forceHeight: false
+    });
+}
+  // skrollr.init();
 
 
 }(jQuery));
