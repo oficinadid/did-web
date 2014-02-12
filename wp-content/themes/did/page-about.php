@@ -155,11 +155,11 @@
             <div class="main-nav">
                 <ul>
                     <li><a href="<?php bloginfo('wpurl'); ?>" class="logo"></a></li>
-                    <li class="current"><a><?php echo (qtrans_getLanguage() == 'en') ? 'About' : 'Acerca de'; ?></a></li>
+                    <li class="menu-about current"><a><?php echo (qtrans_getLanguage() == 'en') ? 'About' : 'Acerca de'; ?></a></li>
                     <?php if (qtrans_getLanguage() == 'en'): ?>
-                    	<li><a href="http://oficinadid.cl/en/projects/">Projects</a></li>
+                    	<li class="menu-proyectos"><a href="http://oficinadid.cl/en/projects/">Projects</a></li>
                     <?php else: ?>
-                    	<li><a href="http://oficinadid.cl/es/proyectos/">Proyectos</a></li>
+                    	<li class="menu-proyectos"><a href="http://oficinadid.cl/es/proyectos/">Proyectos</a></li>
                     <?php endif ?>
 
                 </ul>
