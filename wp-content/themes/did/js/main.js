@@ -47,11 +47,11 @@
 
   // quitamos contenedor video
 
-  // $('#intro .scroll-to').click(function () {
-  //   $('#intro').delay(1000).fadeOut(300, function () {
-  //     $(this).remove();
-  //   });
-  // });
+  $('#intro .scroll-to').click(function () {
+    $('#intro').delay(1000).fadeOut(300, function () {
+      $(this).remove();
+    });
+  });
 
   // expandimos/contraemeos lista de proyectos
 
