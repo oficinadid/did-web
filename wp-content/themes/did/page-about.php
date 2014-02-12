@@ -133,8 +133,13 @@
         <div class="footer">
             <div class="container">
                 <div class="left">
-                    <span class="contact">Contáctanos en: <a href="mailto:info@did.is"><i class="fa fa-angle-right"></i> info@did.is</a></span>
-                    <span class="disc">DID 2014 | Todos los derechos resevados</span>
+                <?php if (qtrans_getLanguage() == 'en'): ?>
+                	<span class="contact">Contact us at: <a href="mailto:info@did.is"><i class="fa fa-angle-right"></i> info@did.is</a></span>
+                    <span class="disc">DID <?php echo date('Y') ?> | All rights reserved</span>
+                <?php else: ?>
+                	<span class="contact">Contáctanos en: <a href="mailto:info@did.is"><i class="fa fa-angle-right"></i> info@did.is</a></span>
+                    <span class="disc">DID <?php echo date('Y') ?> | Todos los derechos resevados</span>
+                <?php endif ?>
                 </div>
                 <div class="right">
                     <div class="fb-like" data-href="https://www.facebook.com/oficinadid" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
