@@ -21,6 +21,7 @@
 
             <div class="front">
                 <div class="content">
+
                     <?php if (qtrans_getLanguage() == 'en'): ?>
                     	<h1 class="desc"><?php echo get_field('about_en', 6) ?></h1>
 
@@ -36,6 +37,7 @@
 
         <div id="about-cont" class="content about">
             <div class="container">
+
             	<?php echo apply_filters('the_content', get_post_field('post_content', 6 )); ?>
 
             	<?php if (qtrans_getLanguage() == 'en'): ?>
@@ -106,11 +108,16 @@
                                     <div class="redes">
                                         <span><i class="fa fa-angle-right"></i> <?php echo (qtrans_getLanguage() == 'en') ? 'Follow at' : 'Seguir en:'; ?></span>
                                         <ul>
-                                        	<?php if (get_field('linkedin')): ?>
-                                        		<li><a href="<?php the_field('linkedin') ?>" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                                        	<?php elseif(get_field('twitter')): ?>
-                                        		<li><a href="<?php the_field('twitter') ?>" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                        	<?php endif ?>
+											<?php if (get_field('linkedin', get_the_ID())): ?>
+												<li><a href="<?php the_field('linkedin') ?>" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+											<?php endif ?>
+
+
+											<?php if (get_field('twitter', get_the_ID())): ?>
+												<li><a href="<?php the_field('twitter') ?>" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+											<?php endif ?>
+
+
 
                                         </ul>
                                     </div>

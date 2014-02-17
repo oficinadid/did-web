@@ -12,7 +12,7 @@
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
         <?php wp_head(); ?>
 
-        <meta property="og:image" content="didlogo.jpg"/>
+        <meta property="og:image" content="http://oficinadid.cl/didlogo.jpg"/>
     </head>
 
     <body <?php body_class('lang-'.qtrans_getLanguage()); ?>>
