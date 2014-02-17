@@ -141,7 +141,7 @@ menu {
                         }
                         &.logo {
                             width:40px;
-                            padding:0;
+                            padding:0 !important;
                             background:#000 url(../img/main-nav-logo.png) no-repeat center;
                         }
                     }
@@ -542,16 +542,13 @@ menu {
 	menu {
 		&#main {
 			.left {
-				.menu-about {
-					a {
-						padding: 14px 28px 14px 29px;
-					}
-				}
-				.menu-proyectos {
-					a {
-						padding: 14px 28px 14px 29px;
-					}
-				}
+				ul {
+                    li {
+                        a {
+                            padding:14px 28px 14px 29px;
+                        }
+                    }
+                }
 			}
 		}
 	}

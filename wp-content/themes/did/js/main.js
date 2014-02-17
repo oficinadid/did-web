@@ -61,6 +61,10 @@ e.preventDefault();
     $('i', this).toggleClass('fa-angle-down fa-angle-up');
   });
 
+  $('.sub-nav ul.proyects li a').click(function (e) {
+    $('.sub-nav').toggleClass('collapsed');
+  });
+
 
   $('.proyect-desc').looper({
     interval: false

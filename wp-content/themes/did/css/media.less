@@ -40,7 +40,7 @@ and (orientation : portrait) {
 			}
 			h1.desc {
 				padding:0 80px;
-				font-weight:300;
+				font-weight:500;
 			}
 			&.equipo {
 				background:url(../img/about-equipo-bg.jpg) no-repeat top center;
@@ -78,6 +78,13 @@ and (orientation : portrait) {
 	}
 	#intro {
     	background-size:auto 100%;
+    	.front {
+    		.content {
+    			h1.desc {
+	    			font-weight:300;
+	    		}
+    		}
+    	}
 	}
 
 }
@@ -121,6 +128,13 @@ and (orientation : landscape) {
 	}
 	#intro {
     	background-size:auto 100%;
+    	.front {
+    		.content {
+    			h1.desc {
+	    			font-weight:300;
+	    		}
+    		}
+    	}
 	}
 
 }
@@ -170,13 +184,13 @@ and (orientation : portrait) {
 		}
 		.right {
 			position:fixed;
-			bottom:20px;
+			bottom:0;
 			left:58px;
 			z-index:9;
 		}
 	}
 	menu#proyect-navi {
-		bottom:20px;
+		bottom:40px;
 		a {
 			width:40px;
 			span {
@@ -238,30 +252,17 @@ and (orientation : portrait) {
 		}
 		.footer {
 			.container {
+				padding:25px 15px;
 				.right {
-					margin:20px 0 0;
-					float:left;
+					padding:10px 0 0;
+					float:none;
+					clear:both;
 				}
 			}
 		}
 	}
-	.page-id-6 {
+	.home {
 		menu#main {
-			.main-nav {
-				ul {
-					li {
-						a {
-							padding:14px 28px;
-							&.logo {
-								padding:0;
-							}
-						} 
-						&:last-child a{
-							padding:14px 28px 14px 29px;
-						}
-					}
-				}
-			}
 			.right {
 				position:relative;
 				bottom:40px;
@@ -282,11 +283,68 @@ and (orientation : portrait) {
     			h1.desc {
 					font-size:19px;
 					margin:0 auto 30px;
+					font-weight:300;
     			}
     		}
     	}
 	}
 
+	.home {
+		menu#main {
+			.left {
+				.main-nav {
+					ul {
+						li {
+							a {
+								padding:14px 28px;
+								&.logo {
+									padding:0;
+								}
+							} 
+							&:last-child a{
+								padding:14px 28px 14px 29px;
+							}
+						}
+					}
+				}
+			}
+		}
+		&.lang-es {
+			menu#main {
+				.left {
+					.main-nav {
+						ul {
+							li {
+								a {
+									padding:14px 20px 14px 21px;
+								}
+								&:last-child {
+									a {
+										padding:14px 21px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.lang-es {
+		menu#main {
+			.left {
+				.main-nav {
+					ul {
+						li {
+							a {
+								padding:14px 37px 14px 38px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -332,19 +390,6 @@ and (orientation : landscape) {
 				p {
 					margin:10px 0 0;
 				}
-			}
-		}
-	}
-	.page-id-6 {
-		menu#main .main-nav ul li {
-			a {
-				padding:14px 37px;
-				&.logo {
-					padding:0;
-				}
-			} 
-			&:last-child a{
-				padding:14px 37px 14px 38px;
 			}
 		}
 	}
@@ -441,9 +486,51 @@ and (orientation : landscape) {
     			h1.desc {
 					font-size:19px;
 					margin:0 auto 20px;
+					font-weight:300;
     			}
     		}
     	}
+	}
+
+	.home {
+		menu#main {
+			.left {
+				.main-nav {
+					ul {
+						li {
+							a {
+								padding:14px 37px;
+							}
+							&:last-child {
+								a {
+									padding:14px 37px 14px 38px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		&.lang-es {
+			menu#main {
+				.left {
+					.main-nav {
+						ul {
+							li {
+								a {
+									padding:14px 30px;
+								}
+								&:last-child {
+									a {
+										padding:14px 30px 14px 29px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 
 }
@@ -464,7 +551,7 @@ and (orientation : landscape) {
 		}
 		.right {
 			position:fixed;
-			bottom:20px;
+			bottom:0;
 			left:58px;
 			z-index:9;
 		}
@@ -522,6 +609,82 @@ and (orientation : landscape) {
 					>li {
 						.right {
 							width:410px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.home {
+		menu#main {
+			.left {
+				width:362px;
+				.main-nav {
+					ul {
+						li {
+							a {
+								padding:14px 59px;
+							}
+							&:last-child {
+								a {
+									padding:14px 59px 14px 60px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		&.lang-es {
+			menu#main {
+				.left {
+					.main-nav {
+						ul {
+							li {
+								a {
+									padding:14px 52px;
+								}
+								&:last-child {
+									a {
+										padding:14px 52px 14px 51px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	menu#main {
+		.left {
+			width:362px;
+			.main-nav {
+				ul {
+					li {
+						a {
+							padding:14px 55px;
+						}
+						&:last-child {
+							a {
+								padding:14px 55px 14px 56px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.lang-es {
+		menu#main {
+			.left {
+				.main-nav {
+					ul {
+						li {
+							a {
+								padding:14px 48px;
+							}
 						}
 					}
 				}
