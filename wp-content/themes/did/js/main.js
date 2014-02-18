@@ -56,12 +56,12 @@
   // expandimos/contraemeos lista de proyectos
 
   $('#proyectos-cont .menu-proyectos a').click(function (e) {
-e.preventDefault();
+	e.preventDefault();
     $('.sub-nav').toggleClass('collapsed');
     $('i', this).toggleClass('fa-angle-down fa-angle-up');
   });
 
-  $('.sub-nav ul.proyects li a').click(function (e) {
+  $('.sub-nav ul.proyects li a').click(function () {
     $('.sub-nav').toggleClass('collapsed');
   });
 
